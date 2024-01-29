@@ -32,7 +32,7 @@ int main(void)
     /* printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui); */
     _printf("Character:[%c]\n", 'H');
     printf("Character:[%c]\n", 'H');
-    _printf("String:[%s]\n", "I am a string !");
+    _printf("String:[%s]\n", "100% !");
     printf("String:[%s]\n", "I am a string !");
     /* _printf("Address:[%p]\n", addr); */
     /* printf("Address:[%p]\n", addr); */
@@ -42,7 +42,7 @@ int main(void)
     printf("Len:[%d]\n", len2);
     /* _printf("Unknown:[%r]\n"); */
     /* printf("Unknown:[%r]\n"); */
-    _printf("%b\n", -10);
-    printf("%b\n", -10);
+    _printf("%b\n", 10);
+    /*printf("%b\n", 10);*/
     return (0);
 }
