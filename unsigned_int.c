@@ -1,10 +1,6 @@
 #include "main.h"
 /**
- *
- *
- */
-/**
- * print_int - prints integer using the putchar function
+ * print_u - prints integer using the putchar function
  * @value: this parameter accepts the value to be printed
  */
 void print_u(unsigned int value)
@@ -24,8 +20,9 @@ void print_u(unsigned int value)
 }
 
 /**
- *
- *
+ * unsigned_int - converts form integer to unsigned int
+ * @val: the value parameter that accepts the integer
+ * Return: returns 1
  */
 int unsigned_int(va_list val)
 {
@@ -33,5 +30,5 @@ int unsigned_int(va_list val)
 
 	i = va_arg(val, unsigned int);
 	print_u(i);
-	return(1);
+	return (1);
 }

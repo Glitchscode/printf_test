@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- *
- *
+ * binary - converts decimal to binary
+ * @val: value to convert
+ * Return: returns 1
  */
 int binary(va_list val)
 {

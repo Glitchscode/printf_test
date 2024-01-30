@@ -2,17 +2,14 @@
 /**
 * _printf - prints a string with format specifiers if specified
 * @format: format specifier
-*
+* Return: returns length of the string
 */
 int _printf(const char *format, ...)
 {
 	convert_to s[] = {
 		{"%s", string}, {"%c", character}, {"%%", _37},
-		{"%i", integer}, {"%d", decimal}, /* {"%r", rev_string}, */
-		/* {"%R", rot13}, */ {"%b", binary},
+		{"%i", integer}, {"%d", decimal}, {"%b", binary},
 		{"%u", unsigned_int}
-		/* {"%o", octal}, {"%x", hexadecimal}, {"%X", HEXADECIMAL}, */
-		/* {"%S", exclusive_string}, {"%p", pointer} */
 	};
 	int i, len, j;
 	va_list args;
@@ -22,7 +19,7 @@ int _printf(const char *format, ...)
 	va_start(args, format);
 
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
-		return -1;
+		return (-1);
 Here:
 	while (format[i] != '\0')
 	{
@@ -42,5 +39,5 @@ Here:
 		i++;
 	}
 	va_end(args);
-	return(len);
+	return (len);
 }

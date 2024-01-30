@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_int - prints integer using the putchar function
+ * print_dec - prints integer using the putchar function
  * @value: this parameter accepts the value to be printed
  */
 void print_dec(int value)
@@ -28,5 +28,5 @@ int decimal(va_list val)
 
 	d = va_arg(val, int);
 	print_dec(d);
-	return(0);
+	return (0);
 }

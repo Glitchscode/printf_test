@@ -28,5 +28,5 @@ int integer(va_list val)
 
 	i = va_arg(val, int);
 	print_int(i);
-	return(0);
+	return (0);
 }

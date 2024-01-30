@@ -2,6 +2,7 @@
 /**
  * character - print a single character
  * @val: value to be printed
+ * Return: returns 1
  */
 int character(va_list val)
 {

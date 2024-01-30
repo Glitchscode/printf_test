@@ -1,3 +1,9 @@
+/**
+ * string - prints the string
+ * @val: the value string
+ * Return: returns 1
+ */
+
 #include "main.h"
 int string(va_list val)
 {
@@ -13,5 +19,5 @@ int string(va_list val)
 	{
 		_putchar(str[k]);
 	}
-	return (1);;
+	return (1);
 }
